@@ -5,7 +5,7 @@
 # About Us
 
 - - Our team consists of the following members, with their contributions listed:
-    - Ginthushan Kandasamy ([github usernane](github link))
+    - Ginthushan Kandasamy ([Ginthushan](https://github.com/Ginthushan))
       - Contributes
     - Wenbo Zhang ([Falanan](https://github.com/Falanan))
       - Contributes
