@@ -11,6 +11,6 @@
       - Contributes
     - Michael Damelo ([github usernane](github link))
       - Contributes
-    - Kaathihan Luxmachandran ([github usernane](github link))
+    - Kaathihan Luxmachandran ([Kaathihan](https://github.com/Kaathihan))
       - Contributes
 
