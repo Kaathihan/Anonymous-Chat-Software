@@ -9,7 +9,7 @@
       - Contributes
     - Wenbo Zhang ([Falanan](https://github.com/Falanan))
       - Contributes
-    - Michael Damelo ([github usernane](github link))
+    - Michael Damelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
       - Contributes
     - Kaathihan Luxmachandran ([Kaathihan](https://github.com/Kaathihan))
       - Contributes
