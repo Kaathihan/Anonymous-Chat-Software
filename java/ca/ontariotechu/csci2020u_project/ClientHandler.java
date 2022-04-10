@@ -12,6 +12,9 @@ public class ClientHandler implements Runnable{
         this.user = user;
     }
 
+    /**
+     * handle the client connection, read the message from user, then call the function in Server class to send it to all users
+     */
     @Override
     public void run() {
         String message = null;

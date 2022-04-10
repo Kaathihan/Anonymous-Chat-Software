@@ -6,6 +6,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
+
+
 public class Server implements Runnable {
     static ArrayList<User> usersList = new ArrayList<>();
     private int port;
@@ -19,6 +21,11 @@ public class Server implements Runnable {
         new Thread(new Server(6666)).start();
     }
 
+
+    /**
+     * This function is used to send message to all users in the chat room(userList)
+     * @param message - the message sent by user
+     */
     public void sendToAllUsers(String message){
         for (User user : usersList){
             user.getWriter().println(user.getUserName() + " : " + message);
@@ -26,10 +33,12 @@ public class Server implements Runnable {
     }
 
 
+    /**
+     * When a new user connected to this server, read the first line of input as the the user's name.
+     * Then add the user to the userList, then start a new thread to handle the client
+     */
     @Override
     public void run() {
-
-
         try {
             server = new ServerSocket(port);
             server.setReuseAddress(true);
