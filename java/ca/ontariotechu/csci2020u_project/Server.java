@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 
 
-public class Server implements Runnable {
+public class Server extends Server_UI implements Runnable {
     static ArrayList<User> usersList = new ArrayList<>();
     private int port;
     private ServerSocket server = null;
@@ -43,6 +43,7 @@ public class Server implements Runnable {
             server = new ServerSocket(port);
             server.setReuseAddress(true);
             System.out.println("Listening on port: " + port);
+            write("Listening on port" + port);
 
             while (true){
                 Socket socket = server.accept();
