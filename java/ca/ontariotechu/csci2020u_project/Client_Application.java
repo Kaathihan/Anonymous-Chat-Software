@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Client_Application extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Client_Application.class.getResource("Server.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Client_Application.class.getResource("Chat.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Chat client");
         stage.setScene(scene);
@@ -20,4 +20,6 @@ public class Client_Application extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+
 }

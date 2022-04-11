@@ -22,8 +22,6 @@ public class Client {
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             Scanner sc = new Scanner(System.in);
 
-
-
             new Thread(()->{
                 String message = "";
                 while (true){
@@ -41,7 +39,6 @@ public class Client {
                 message = sc.nextLine();
                 printWriter.println(message);
             }
-
 
             sc.close();
 

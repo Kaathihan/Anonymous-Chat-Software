@@ -34,7 +34,7 @@ public class Server implements Runnable {
 
 
     /**
-     * When a new user connected to this server, read the first line of input as the the user's name.
+     * When a new user connected to this server, read the first line of input as the user's name.
      * Then add the user to the userList, then start a new thread to handle the client
      */
     @Override
