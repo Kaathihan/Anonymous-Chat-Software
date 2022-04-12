@@ -2,6 +2,7 @@ package ca.ontariotechu.csci2020u_project;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -19,6 +20,8 @@ public class ClientUiController implements Initializable {
     private TextArea txtArea;
     @FXML
     private TextField chatMessage;
+    @FXML
+    private Label label;
 
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
@@ -74,6 +77,7 @@ public class ClientUiController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         txtArea.setEditable(false);
+        label.setText("Welcome " + Start_Controller.username);
 
         String ipAddress = Start_Controller.ip;
         int port = Integer.parseInt(Start_Controller.port);
