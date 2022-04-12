@@ -104,16 +104,20 @@ public class ClientUiController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         txtArea.setEditable(false);
-//        try {
-//            socket = new Socket("localhost", 6666);
-//            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-//            printWriter = new PrintWriter(socket.getOutputStream(), true);
-//            this.write("Connected to server!");
-//            receiveMessages();
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
+        String ipAddress = Start_Controller.ip;
+        int port = Integer.parseInt(Start_Controller.port);
+        try {
+            socket = new Socket(ipAddress, port);
+            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            printWriter = new PrintWriter(socket.getOutputStream(), true);
+            printWriter.println(Start_Controller.username);
+            this.write("Connected to server!");
+
+            receiveMessages();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
     }
 }
