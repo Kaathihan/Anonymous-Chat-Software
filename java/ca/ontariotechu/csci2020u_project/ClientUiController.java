@@ -1,17 +1,19 @@
 package ca.ontariotechu.csci2020u_project;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
@@ -93,5 +95,33 @@ public class ClientUiController implements Initializable {
             e.printStackTrace();
         }
 
+    }
+
+    /**
+     * This function is used to save a chat log to a .txt file if the user desires
+     */
+
+    @FXML
+    void saveChatLog(ActionEvent event){
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Add All", "*"));
+        fileChooser.setTitle("Save your file");
+        File file = fileChooser.showSaveDialog(new Stage());
+
+        //Gets time when chat log was saved
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+
+        if (fileChooser != null){
+            try {
+                PrintStream prinS = new PrintStream(file);
+                prinS.println("Chat log saved on : " + dtf.format(now) + "\n");
+                prinS.println(txtArea.getText());
+
+            }
+            catch (Exception E){
+                System.out.println("Failed to save chat");
+            }
+        }
     }
 }
