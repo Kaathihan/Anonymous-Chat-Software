@@ -13,8 +13,13 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
+       <TextField fx:id="ipAddressField" text="localhost"/>
+       <TextField fx:id="portField" text="6666"/>
+       <TextField fx:id="userNameField" promptText="user name"/>
+       <Button onAction="#connectServer">connect</Button>
       <TextArea fx:id="txtArea" prefHeight="433.0" prefWidth="451.0" />
       <TextField fx:id="chatMessage"/>
-       <Button fx:id="sendButton" onAction="#sendMessages"> send</Button>
+       <Button onAction="#sendMessages"> send</Button>
+       <Button onAction="#handleExit">Exit</Button>
    </children>
 </VBox>

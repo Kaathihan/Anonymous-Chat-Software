@@ -19,6 +19,12 @@ public class ClientUiController implements Initializable {
     private TextArea txtArea;
     @FXML
     private TextField chatMessage;
+    @FXML
+    private TextField ipAddressField;
+    @FXML
+    private TextField portField;
+    @FXML
+    private TextField userNameField;
 
 
     private BufferedReader bufferedReader;
@@ -27,6 +33,37 @@ public class ClientUiController implements Initializable {
 
     public void write(String line){
         txtArea.appendText(line + "\n");
+    }
+
+    @FXML
+    private void connectServer(){
+        String ipAddress = ipAddressField.getText();
+        int port = Integer.parseInt(portField.getText());
+        try {
+            socket = new Socket(ipAddress, port);
+            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            printWriter = new PrintWriter(socket.getOutputStream(), true);
+            printWriter.println(userNameField.getText());
+            this.write("Connected to server!");
+
+            receiveMessages();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void handleExit(){
+        try {
+            bufferedReader.close();
+            printWriter.close();
+            socket.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            System.exit(0);
+        }
+
     }
 
 
@@ -39,7 +76,7 @@ public class ClientUiController implements Initializable {
 
         //Trying to figure out a way to send the messages to server
         printWriter.println(message);
-        printWriter.flush();
+//        printWriter.flush();
 
     }
 
@@ -54,6 +91,7 @@ public class ClientUiController implements Initializable {
                         msg = bufferedReader.readLine();
                         txtArea.appendText("\n"+msg);
                     } catch (IOException e) {
+                        e.printStackTrace();
                     }
                 }
             }
@@ -66,16 +104,16 @@ public class ClientUiController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         txtArea.setEditable(false);
-        try {
-            socket = new Socket("localhost", 6666);
-            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            printWriter = new PrintWriter(socket.getOutputStream(), true);
-            this.write("Connected to server!");
-            receiveMessages();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            socket = new Socket("localhost", 6666);
+//            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+//            printWriter = new PrintWriter(socket.getOutputStream(), true);
+//            this.write("Connected to server!");
+//            receiveMessages();
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
     }
 }

@@ -23,7 +23,8 @@ public class ClientHandler implements Runnable{
 
         while (sc.hasNextLine()){
             message = sc.nextLine();
-            server.sendToAllUsers(message);
+            System.out.println(message);
+            server.sendToAllUsers(user, message);
         }
 
     }

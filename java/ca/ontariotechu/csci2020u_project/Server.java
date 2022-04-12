@@ -26,9 +26,9 @@ public class Server implements Runnable {
      * This function is used to send message to all users in the chat room(userList)
      * @param message - the message sent by user
      */
-    public void sendToAllUsers(String message){
+    public void sendToAllUsers(User currentUser, String message){
         for (User user : usersList){
-            user.getWriter().println(user.getUserName() + " : " + message);
+            user.getWriter().println(currentUser.getUserName() + " : " + message);
         }
     }
 
