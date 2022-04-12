@@ -19,13 +19,6 @@ public class ClientUiController implements Initializable {
     private TextArea txtArea;
     @FXML
     private TextField chatMessage;
-    @FXML
-    private TextField ipAddressField;
-    @FXML
-    private TextField portField;
-    @FXML
-    private TextField userNameField;
-
 
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
@@ -33,23 +26,6 @@ public class ClientUiController implements Initializable {
 
     public void write(String line){
         txtArea.appendText(line + "\n");
-    }
-
-    @FXML
-    private void connectServer(){
-        String ipAddress = ipAddressField.getText();
-        int port = Integer.parseInt(portField.getText());
-        try {
-            socket = new Socket(ipAddress, port);
-            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            printWriter = new PrintWriter(socket.getOutputStream(), true);
-            printWriter.println(userNameField.getText());
-            this.write("Connected to server!");
-
-            receiveMessages();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
     }
 
     @FXML
@@ -63,20 +39,16 @@ public class ClientUiController implements Initializable {
         } finally {
             System.exit(0);
         }
-
     }
-
 
     // this function should be used to sent message to sever, these codes only append messages to textArea.
     @FXML
     private void sendMessages(){
         String message = chatMessage.getText();
         chatMessage.clear();
-        txtArea.appendText(message + "\n");
 
-        //Trying to figure out a way to send the messages to server
+
         printWriter.println(message);
-//        printWriter.flush();
 
     }
 
@@ -97,8 +69,6 @@ public class ClientUiController implements Initializable {
             }
         }).start();
     }
-
-
 
     // I directly connect to sever when the program start, later modify to require user input the address and port
     @Override
