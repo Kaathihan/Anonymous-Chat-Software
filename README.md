@@ -12,10 +12,16 @@
       - Server's code
       - README.md file
       - A small part of the client's code
-    - Michael Damelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
-      - Contributes
+    - Michael DeMelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
+      - README.md file
+      - Bug checking and testing code
+      - Editing and refining code
     - Kaathihan Luxmachandran ([Kaathihan](https://github.com/Kaathihan))
-      - Contributes
+      - Server code
+      - Client code
+      - README.md file
+
+
 
 # Introduction
 
@@ -35,7 +41,7 @@ Considering that different machines use different versions of java and gradle. W
 
 <h5>Runs fine in the following operating environments:  </h5>
 
-- Windows10 21H2 amd64, Java 15.0.2, Gradle 6.3
+- Windows10 21H2 amd64, macOS, linux, Java 15.0.2, Gradle 6.3
 
 # How to run this project
 
@@ -43,7 +49,8 @@ This project was created using IntelliJ IDEA in a Windows environment.
 
 Video tutorial: ([video name](link))
 
-<h2>Clone the project to local disk </h2>
+<h2>Setting up the project</h2>
+This is done to accommodate for all machines and different versions of java and gradle. Doing these steps will setup our project to run on the java and gradle versions that your machine is running on.
 
 <h3>Step 1: Create a project on your local disk </h3>
 
