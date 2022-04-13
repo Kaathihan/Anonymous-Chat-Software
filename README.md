@@ -38,7 +38,9 @@ This project was created using IntelliJ IDEA in a Windows environment.
 
 <h3>Step 1: Create a project on your local disk </h3>
 
-![](https://https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png?raw=true)
+![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png?raw=true)
+
+![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1(2)M.png?raw=true)
 
 <h3>Step 2: </h3>
 
