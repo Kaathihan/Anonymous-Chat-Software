@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="638.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ontariotechu.csci2020u_project.ClientUiController">
+<AnchorPane prefHeight="691.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ontariotechu.csci2020u_project.ClientUiController">
    <children>
       <Label fx:id="label" layoutX="194.0" layoutY="49.0" text="Welcome">
          <font>
@@ -19,10 +19,10 @@
          </font>
       </Label>
       <TextArea fx:id="txtArea" layoutX="9.0" layoutY="83.0" prefHeight="432.0" prefWidth="431.0" />
-       <TextField fx:id="privateMessageField" layoutX="18.0" layoutY="510.0" prefHeight="26.0" prefWidth="90.0" promptText="private message to: "/>
-      <TextField fx:id="chatMessage" layoutX="18.0" layoutY="527.0" prefHeight="26.0" prefWidth="413.0" />
-       <Button layoutX="172.0" layoutY="561.0" onAction="#sendMessages" prefHeight="26.0" prefWidth="104.0" text="Send"> send</Button>
-       <Button layoutX="208.0" layoutY="598.0" onAction="#handleExit" text="Exit">Exit</Button>
+       <TextField fx:id="privateMessageField" alignment="CENTER" layoutX="132.0" layoutY="534.0" prefHeight="26.0" prefWidth="185.0" promptText="Private message to: " />
+      <TextField fx:id="chatMessage" layoutX="18.0" layoutY="574.0" prefHeight="26.0" prefWidth="413.0" promptText="Enter your message" />
+       <Button layoutX="173.0" layoutY="611.0" onAction="#sendMessages" prefHeight="26.0" prefWidth="104.0" text="Send"> send</Button>
+       <Button layoutX="207.0" layoutY="651.0" onAction="#handleExit" text="Exit">Exit</Button>
       <MenuBar layoutX="-2.0" layoutY="1.0" prefHeight="22.0" prefWidth="450.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
