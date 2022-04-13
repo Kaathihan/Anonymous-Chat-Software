@@ -6,9 +6,12 @@
 
 - - Our team consists of the following members, with their contributions listed:
     - Ginthushan Kandasamy ([Ginthushan](https://github.com/Ginthushan))
-      - Contributes
+      - The vast majority of the client's code
+      - Save chat log to file function
     - Wenbo Zhang ([Falanan](https://github.com/Falanan))
-      - Contributes
+      - Server's code
+      - README.md file
+      - A small part of the client code
     - Michael Damelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
       - Contributes
     - Kaathihan Luxmachandran ([Kaathihan](https://github.com/Kaathihan))
@@ -30,11 +33,15 @@ Considering that different machines use different versions of java and gradle. W
 - Sending direct messages to online user
 - Save chat record to local file
 
+<h5>Runs fine in the following operating environments:  </h5>
 
+- Windows10 21H2 amd64, Java 15.0.2, Gradle 6.3
 
 # How to run this project
 
 This project was created using IntelliJ IDEA in a Windows environment.
+
+Video tutorial: ([video name](link))
 
 <h2>Clone the project to local disk </h2>
 
