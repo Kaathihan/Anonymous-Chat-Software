@@ -40,14 +40,14 @@ This project was created using IntelliJ IDEA in a Windows environment.
 
 <h3>Step 1: Create a project on your local disk </h3>
 
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png?raw=true" style="zoom:50%;" />
 
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1(2)M.png?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1(2)M.png?raw=true" style="zoom:50%;" />
 
 <h3>Step 2: </h3>
 
 Delete the "main" folder in In the src folder where you just created the project
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step2M.jpg?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step2M.jpg?raw=true" style="zoom:50%;" />
 
 <h3>Step 3: Clone the project </h3>
 
@@ -62,7 +62,7 @@ Delete the "main" folder in In the src folder where you just created the project
 ![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step3(4)M.jpg?raw=true)
 
 <h3>Step 4: Back to IntelliJ IDEA </h3>
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step4.jpg?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step4.jpg?raw=true" style="zoom: 50%;" />
 
 
 
@@ -82,15 +82,15 @@ Enter the username, IP address and port number. Here is a demonstration with loc
 
 <h3>Step 3: Start Chat </h3>
 
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/RunStep3.jpg?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/RunStep3.jpg?raw=true" style="zoom:50%;" />
 
 <h5>Save chat record to file </h5>
 
 ![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/Savefile1M.jpg?raw=true)
 
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/Savefile2M.jpg?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/SaveFile2M.jpg?raw=true" style="zoom:50%;" />
 
 <h5>The file saved </h5>
 
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/SaveFile3.jpg?raw=true)
+<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/SaveFile3.jpg?raw=true" style="zoom:50%;" />
 
