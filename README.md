@@ -92,5 +92,5 @@ Enter the username, IP address and port number. Here is a demonstration with loc
 
 <h5>The file saved </h5>
 
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/Savefile3M.jpg?raw=true)
+![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/Savefile3.jpg?raw=true)
 
