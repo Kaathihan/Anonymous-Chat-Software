@@ -11,7 +11,7 @@
     - Wenbo Zhang ([Falanan](https://github.com/Falanan))
       - Server's code
       - README.md file
-      - A small part of the client code
+      - A small part of the client's code
     - Michael Damelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
       - Contributes
     - Kaathihan Luxmachandran ([Kaathihan](https://github.com/Kaathihan))
