@@ -50,6 +50,7 @@ public class ClientUiController implements Initializable {
         if (message != null){
             if (!privateMessage.equals("")){
                 printWriter.println("@" + privateMessage + ":" + message);
+                txtArea.appendText("\nprivate message to "+ privateMessage + " : " + message);
             }else {
                 printWriter.println(message);
             }

@@ -39,7 +39,7 @@ public class Server implements Runnable {
     public void sendPrivateMessage(String targetUser, User currentUser, String message){
         for (User u : usersList){
             if (u.getUserName().equals(targetUser)){
-                u.getWriter().println(message);
+                u.getWriter().println(currentUser.getUserName() + " : " + message);
             }
         }
     }
