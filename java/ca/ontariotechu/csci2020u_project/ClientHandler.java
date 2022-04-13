@@ -1,6 +1,8 @@
 package ca.ontariotechu.csci2020u_project;
 
 import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class ClientHandler implements Runnable{
 
@@ -23,8 +25,18 @@ public class ClientHandler implements Runnable{
 
         while (sc.hasNextLine()){
             message = sc.nextLine();
-            System.out.println(message);
-            server.sendToAllUsers(user, message);
+            if (message.startsWith("@")){
+                String messages[] = message.split(":");
+//                System.out.println(messages[0].split("@")[1]);
+//                messages[0].replace("@", "");
+                server.sendPrivateMessage(messages[0].split("@")[1], user, messages[1]);
+            }else if (message.equals("U%s^E7*r(E&x%^I754t36")){
+                server.deleteUser(user);
+            }else {
+                server.sendToAllUsers(user, message);
+            }
+//            System.out.println(message);
+//            server.sendToAllUsers(user, message);
         }
 
     }

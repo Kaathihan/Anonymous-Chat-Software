@@ -19,6 +19,7 @@
          </font>
       </Label>
       <TextArea fx:id="txtArea" layoutX="9.0" layoutY="83.0" prefHeight="432.0" prefWidth="431.0" />
+       <TextField fx:id="privateMessageField" layoutX="18.0" layoutY="510.0" prefHeight="26.0" prefWidth="90.0" promptText="private message to: "/>
       <TextField fx:id="chatMessage" layoutX="18.0" layoutY="527.0" prefHeight="26.0" prefWidth="413.0" />
        <Button layoutX="172.0" layoutY="561.0" onAction="#sendMessages" prefHeight="26.0" prefWidth="104.0" text="Send"> send</Button>
        <Button layoutX="208.0" layoutY="598.0" onAction="#handleExit" text="Exit">Exit</Button>

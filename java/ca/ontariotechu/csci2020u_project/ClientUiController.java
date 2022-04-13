@@ -24,6 +24,8 @@ public class ClientUiController implements Initializable {
     private TextField chatMessage;
     @FXML
     private Label label;
+    @FXML
+    private TextField privateMessageField;
 
     private BufferedReader bufferedReader;
     private PrintWriter printWriter;
@@ -35,25 +37,26 @@ public class ClientUiController implements Initializable {
 
     @FXML
     private void handleExit(){
-        try {
-            bufferedReader.close();
-            printWriter.close();
-            socket.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        } finally {
-            System.exit(0);
-        }
+        printWriter.println("U%s^E7*r(E&x%^I754t36");
+        System.exit(0);
     }
 
     // this function should be used to sent message to sever, these codes only append messages to textArea.
     @FXML
     private void sendMessages(){
+        String privateMessage = privateMessageField.getText();
         String message = chatMessage.getText();
+
+        if (message != null){
+            if (!privateMessage.equals("")){
+                printWriter.println("@" + privateMessage + ":" + message);
+            }else {
+                printWriter.println(message);
+            }
+        }
+
         chatMessage.clear();
-
-
-        printWriter.println(message);
+//        System.out.println(privateMessage);
 
     }
 

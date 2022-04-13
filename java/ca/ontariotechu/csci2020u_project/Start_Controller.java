@@ -39,7 +39,6 @@ public class Start_Controller {
 
         try{
 
-
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Chat.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage1 = new Stage();

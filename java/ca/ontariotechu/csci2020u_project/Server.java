@@ -32,6 +32,18 @@ public class Server implements Runnable {
         }
     }
 
+    public void deleteUser(User user){
+        usersList.remove(user);
+    }
+
+    public void sendPrivateMessage(String targetUser, User currentUser, String message){
+        for (User u : usersList){
+            if (u.getUserName().equals(targetUser)){
+                u.getWriter().println(message);
+            }
+        }
+    }
+
 
     /**
      * When a new user connected to this server, read the first line of input as the user's name.
