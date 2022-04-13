@@ -4,7 +4,7 @@
 
 # About Us
 
-- - Our team consists of the following members, with their contributions listed:
+-  Our team consists of the following members, with their contributions listed:
     - Ginthushan Kandasamy ([Ginthushan](https://github.com/Ginthushan))
       - The vast majority of the client's code
       - Save chat log to file function
