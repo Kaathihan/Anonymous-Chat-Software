@@ -18,6 +18,12 @@
 
 <h3>The program is an anonymous chat software.</h3>
 
+Considering that different machines use different versions of java and gradle. We only uploaded the folder containing the java files and the fxml files. To run this program the steps are more complicated, please follow the bootstrap steps to run the program.
+
+<h5> Bulid tools </h5>
+
+- Gradle
+
 <h5>The following functions are implemented:</h5>
 
 - Multi-client socket
@@ -28,5 +34,9 @@
 
 # How to run this project
 
-Considering that different machines use different versions of java and gradle. We only uploaded the folder containing the java files and the fxml files.
+This project was created using IntelliJ IDEA in a Windows environment.
+
+<h3>Step 1: Create a project on your local disk </h3>
+
+![](https://https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png)
 
