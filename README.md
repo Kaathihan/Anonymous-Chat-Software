@@ -40,3 +40,5 @@ This project was created using IntelliJ IDEA in a Windows environment.
 
 ![](https://https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png?raw=true)
 
+<h3>Step 2: </h3>
+
