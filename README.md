@@ -44,13 +44,13 @@ Considering that different machines use different versions of java and gradle. W
 <h5>Runs fine in the following operating environments:  </h5>
 
 - Windows10 21H2 amd64, Java 15.0.2, Gradle 6.3
-- Windows10 21H2 amd64, Java 16.0.2
+- Windows10 21H2 amd64, Java 16.0.2, Gradle 7.3.3
 
 <h1 id="runProj">How to run this project</h1>
 
 This project was created using IntelliJ IDEA in a Windows environment.
 
-Video tutorial: ([video name](link))
+Video tutorial Windows version: ([CSCI2020U Group 28 Project](https://www.youtube.com/watch?v=gFXL_MmL9RY))
 
 <h2>Setting up the project</h2>
 This is done to accommodate for all machines and different versions of java and gradle. Doing these steps will setup our project to run on the java and gradle versions that your machine is running on.
