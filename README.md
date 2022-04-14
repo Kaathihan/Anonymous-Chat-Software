@@ -27,7 +27,7 @@
 
 <h3>The program is an anonymous chat software.</h3>
 
-Considering that different machines use different versions of java and gradle. We don't want to fight with the runtime environment. So, we only uploaded the folder containing the java files and the fxml files. To run this program the steps are more complicated, please follow the bootstrap steps to run the program.
+Considering that different machines use different versions of java and gradle. We don't want to fight with the runtime environment. So, we only uploaded the folder containing the java files and the fxml files. To run this program the steps are more complicated, please follow the <a href="#runProj">bootstrap steps </a>to run the program.
 
 <h5> Bulid tools </h5>
 
@@ -43,7 +43,7 @@ Considering that different machines use different versions of java and gradle. W
 
 - Windows10 21H2 amd64, macOS, linux, Java 15.0.2, Gradle 6.3
 
-# How to run this project
+<h1 id="runProj">How to run this project</h1>
 
 This project was created using IntelliJ IDEA in a Windows environment.
 
