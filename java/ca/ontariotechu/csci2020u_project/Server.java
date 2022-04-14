@@ -41,10 +41,21 @@ public class Server implements Runnable {
         }
     }
 
+
+    /**
+     * This function is used to handle the case of user exit, it will delete the user from userList
+     * @param user - User going to leave
+     */
     public void deleteUser(User user){
         usersList.remove(user);
     }
 
+    /**
+     * This function is used to handle requests to send private messages.
+     * @param targetUser - Target user
+     * @param currentUser - Current user, This variable is used to get current user's name
+     * @param message - Chat message
+     */
     public void sendPrivateMessage(String targetUser, User currentUser, String message){
         for (User u : usersList){
             if (u.getUserName().equals(targetUser)){
@@ -71,7 +82,7 @@ public class Server implements Runnable {
                 String userName = new BufferedReader(new InputStreamReader(socket.getInputStream())).readLine();
                 User newUser = new User(socket, userName);
                 usersList.add(newUser);
-
+                // launch a new thread to handle the new user
                 ClientHandler client = new ClientHandler(this, newUser);
                 new Thread(client).start();
             }

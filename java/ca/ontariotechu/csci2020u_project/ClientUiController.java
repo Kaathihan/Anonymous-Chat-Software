@@ -44,13 +44,21 @@ public class ClientUiController implements Initializable {
         txtArea.appendText(line + "\n");
     }
 
+    /**
+     * When user clicking the exit button,
+     * this function will send a message to server, this message represents the user want to exit
+     */
     @FXML
     private void handleExit(){
         printWriter.println("U%s^E7*r(E&x%^I754t36");
         System.exit(0);
     }
 
-    // this function should be used to sent message to sever, these codes only append messages to textArea.
+    /**
+     * This function is used to send messages to sever
+     * If the user want to send private message, the format of the message sent to the server is:
+     * @ username:private messages
+     */
     @FXML
     private void sendMessages(){
         String privateMessage = privateMessageField.getText();
@@ -70,7 +78,10 @@ public class ClientUiController implements Initializable {
 
     }
 
-    //This function will be used to receive message from the server
+
+    /**
+     * This function will be used to receive message from the server, then append it to textArea
+     */
     public void receiveMessages(){
         new Thread(new Runnable() {
             @Override
@@ -88,7 +99,13 @@ public class ClientUiController implements Initializable {
         }).start();
     }
 
-    // I directly connect to sever when the program start, later modify to require user input the address and port
+    /**
+     * This function will be called when the client interface starts.
+     * It will receive the username, server address and port from Start_Controller
+     * Then communicate with the server
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         txtArea.setEditable(false);
@@ -113,7 +130,6 @@ public class ClientUiController implements Initializable {
     /**
      * This function is used to save a chat log to a .txt file if the user desires
      */
-
     @FXML
     void saveChatLog(ActionEvent event){
         FileChooser fileChooser = new FileChooser();

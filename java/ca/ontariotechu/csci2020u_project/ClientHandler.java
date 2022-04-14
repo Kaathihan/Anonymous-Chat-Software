@@ -24,7 +24,8 @@ public class ClientHandler implements Runnable{
     }
 
     /**
-     * handle the client connection, read the message from user, then call the function in Server class to send it to all users
+     * handle the client connection, read the message from user,
+     * then call the function in Server class
      */
     @Override
     public void run() {
@@ -34,14 +35,17 @@ public class ClientHandler implements Runnable{
 
         while (sc.hasNextLine()){
             message = sc.nextLine();
+            // private message condition
             if (message.startsWith("@")){
-                String messages[] = message.split(":");
+                String[] messages = message.split(":");
 //                System.out.println(messages[0].split("@")[1]);
 //                messages[0].replace("@", "");
                 server.sendPrivateMessage(messages[0].split("@")[1], user, messages[1]);
+            // User want to exit
             }else if (message.equals("U%s^E7*r(E&x%^I754t36")){
                 server.deleteUser(user);
             }else {
+            // send message to all user
                 server.sendToAllUsers(user, message);
             }
 //            System.out.println(message);
