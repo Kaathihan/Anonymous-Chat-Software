@@ -40,6 +40,10 @@ public class Start_Controller {
     public static String port;
     public static String username;
 
+
+    /**
+     * This function will allow the user to connect to a server
+     */
     @FXML
     private void connectServer(){
         ip = ipAddressField.getText();
