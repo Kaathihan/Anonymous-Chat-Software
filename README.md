@@ -41,7 +41,8 @@ Considering that different machines use different versions of java and gradle. W
 
 <h5>Runs fine in the following operating environments:  </h5>
 
-- Windows10 21H2 amd64, Intel(R) Core(TM) i7-10750H CPU, macOS, linux, Java 15.0.2, Java 16.0.2, Gradle 6.3
+- Windows10 21H2 amd64, Java 15.0.2, Gradle 6.3
+- Windows10 21H2 amd64, Java 16.0.2
 
 <h1 id="runProj">How to run this project</h1>
 
