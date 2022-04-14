@@ -9,6 +9,7 @@
       - The vast majority of the client's code
       - Save chat log to file function
       - Coding of UI elements
+      - Video tutorial
     - Wenbo Zhang ([Falanan](https://github.com/Falanan))
       - Server's code
       - README.md file
