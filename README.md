@@ -8,10 +8,12 @@
     - Ginthushan Kandasamy ([Ginthushan](https://github.com/Ginthushan))
       - The vast majority of the client's code
       - Save chat log to file function
+      - Coding of UI elements
     - Wenbo Zhang ([Falanan](https://github.com/Falanan))
       - Server's code
       - README.md file
       - A small part of the client's code
+      - UI element design
     - Michael DeMelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
       - README.md file
       - Bug checking and testing code
