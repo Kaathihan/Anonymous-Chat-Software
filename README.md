@@ -1,114 +1,77 @@
-# CSCI 2020U - Group 28 - Winter 2022
+# Anonymous Chat Software
 
+## Description
+The Anonymous Chat Software is a Java-based application that allows users to communicate anonymously over a network. This project was developed as part of the Software Systems Development and Integration course at Ontario Tech University, focusing on network programming and user interface design. It supports multiple clients, direct messaging, and chat log saving, providing a secure and private communication platform.
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demo](#demo)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Contributors](#contributors)
+- [Contributing](#contributing)
 
-# About Us
+## Introduction
+The Anonymous Chat Software enables users to connect to a server and communicate with others without revealing their identities. It is designed to run on different versions of Java and Gradle, ensuring compatibility across various systems.
 
--  Our team consists of the following members, with their contributions listed:
-    - Ginthushan Kandasamy ([Ginthushan](https://github.com/Ginthushan))
-      - The vast majority of the client's code
-      - Save chat log to file function
-      - Coding of UI elements
-      - Video tutorial
-    - Wenbo Zhang ([Falanan](https://github.com/Falanan))
-      - Server's code
-      - README.md file
-      - A small part of the client's code
-      - UI element design
-    - Michael DeMelo ([OntTechUMichaelDeMelo](https://github.com/OntTechUMichaelDeMelo))
-      - README.md file
-      - Bug checking and testing code
-      - Editing and refining code
-    - Kaathihan Luxmachandran ([Kaathihan](https://github.com/Kaathihan))
-      - Server code
-      - Client code
-      - README.md file
+## Features
+- **Multi-client Support**: Allows multiple users to connect and chat simultaneously.
+- **Direct Messaging**: Send private messages to specific users online.
+- **Chat Log Saving**: Save chat history to a local file for future reference.
+- **User Interface**: Intuitive UI designed using JavaFX.
 
+## Installation
 
+### Prerequisites
+- Java (version 15.0.2 or 16.0.2)
+- Gradle (version 6.3 or 7.3.3)
+- IntelliJ IDEA or another Java IDE
 
-# Introduction
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Kaathihan/Anonymous-Chat-Software.git
+2. **Open the project in IntelliJ IDEA.**
+3. **Configure the project:**
+   - Delete the "main" folder in the `src` directory of your newly created project.
+   - Clone the repository into the `src` folder.
+4. **Build the project using Gradle.**
 
-<h3>The program is an anonymous chat software.</h3>
+### Usage
+1. Login Credentials for Demo:
+   - Email: test@test.com
+   - Password: test1234
+2. Launch the client application:
+   - Open the Start.java file.
+   - Enter your username, IP address, and port number to connect.
+3. Communicate:
+   - Use the chat interface to send messages to other connected users.
+     
+### Demo
+Watch the demo video to see the application in action: [Demo Video](https://www.youtube.com/watch?v=gFXL_MmL9RY)
 
-Considering that different machines use different versions of java and gradle. We don't want to fight with the runtime environment. So, we only uploaded the folder containing the java files and the fxml files. To run this program the steps are more complicated, please follow the <a href="#runProj">bootstrap steps </a>to run the program.
+### Architecture
+- Client-Server Model: The application follows a client-server architecture, where the server manages multiple client connections.
+- UI Design: The user interface is built using JavaFX, providing a responsive and interactive experience.
+  
+### Technologies Used
+- Programming Language: Java
+- Build Tool: Gradle
+- UI Framework: JavaFX
 
-<h5> Bulid tools </h5>
+### Contributors
+- Kaathihan Luxmachandran
+- Michael DeMelo
+- Wenbo Zhang
+- Ginthushan Kandasamy:
 
-- Gradle
-
-<h5>The following functions are implemented:</h5>
-
-- Multi-client socket
-- Sending direct messages to online user
-- Save chat record to local file
-
-<h5>Runs fine in the following operating environments:  </h5>
-
-- Windows10 21H2 amd64, Java 15.0.2, Gradle 6.3
-- Windows10 21H2 amd64, Java 16.0.2, Gradle 7.3.3
-
-<h1 id="runProj">How to run this project</h1>
-
-This project was created using IntelliJ IDEA in a Windows environment.
-
-Video tutorial Windows version: ([CSCI2020U Group 28 Project](https://www.youtube.com/watch?v=gFXL_MmL9RY))
-
-<h2>Setting up the project</h2>
-This is done to accommodate for all machines and different versions of java and gradle. Doing these steps will setup our project to run on the java and gradle versions that your machine is running on.
-
-<h3>Step 1: Create a project on your local disk </h3>
-
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1M.png?raw=true" style="zoom:50%;" />
-
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step1(2)M.png?raw=true" style="zoom:50%;" />
-
-<h3>Step 2: </h3>
-
-Delete the "main" folder in In the src folder where you just created the project
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step2M.jpg?raw=true" style="zoom:50%;" />
-
-<h3>Step 3: Clone the project </h3>
-
-1. Go to the github web page
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step3M.jpg?raw=true)
-
-   
-
-2. Clone the project to src folder
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step3(2)M.jpg?raw=true)
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step3(3)M.jpg?raw=true)
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step3(4)M.jpg?raw=true)
-
-<h3>Step 4: Back to IntelliJ IDEA </h3>
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/step4.jpg?raw=true" style="zoom: 50%;" />
-
-
-
-<h2>Run this project </h2>
-
-<h3>Step 1: Start server </h3>
-
-The port is 6666.
-
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/RunStep1.jpg?raw=true)
-
-<h3>Step 2:  Launch "Start.java" file</h3>
-
-Enter the username, IP address and port number. Here is a demonstration with local environment.
-
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/RunStep2.jpg?raw=true)
-
-<h3>Step 3: Start Chat </h3>
-
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/RunStep3.jpg?raw=true" style="zoom:50%;" />
-
-<h5>Save chat record to file </h5>
-
-![](https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/Savefile1M.jpg?raw=true)
-
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/SaveFile2M.jpg?raw=true" style="zoom:50%;" />
-
-<h5>The file saved </h5>
-
-<img src="https://github.com/Ginthushan/CSCI2020U_Project/blob/master/images/SaveFile3.jpg?raw=true" style="zoom:50%;" />
-
+### Contributing
+   1. Contributions are welcome! Please follow these steps:
+   2. Fork the repository.
+   3. Create a new branch: git checkout -b feature/YourFeature
+   4. Commit your changes: git commit -m 'Add some feature'
+   5. Push to the branch: git push origin feature/YourFeature
+   6. Open a pull request.
